@@ -14,6 +14,7 @@ public class Program
     Car amc = new Car("1976 AMC Pacer", 400, 198000);
 
     List<Car> Cars = new List<Car>() { volkswagen, yugo, ford, amc };
+    yugo.SetPrice(300);
 
     Console.WriteLine("Enter the maximum sacrifice you are willing to make:");
     string stringMaxPrice = Console.ReadLine();

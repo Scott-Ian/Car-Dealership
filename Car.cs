@@ -7,7 +7,11 @@ namespace Dealership.Models
     private string _makeModel;
     private int _price;
     private int _miles;
-    
+    public void SetPrice(int newPrice)
+    {
+      _price = newPrice;
+    }
+  
     public Car(string makeModel, int price, int miles)
     {
       _makeModel = makeModel;
