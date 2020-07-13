@@ -5,6 +5,19 @@ namespace Dealership.Models
   public class Car
   {
     private string _makeModel;
+    public string makeModel
+    {
+      get
+      {
+        return _makeModel;
+      }
+      set
+      {
+        _makeModel = value;
+      }
+    }
+
+    public string MakeModel {get; set;}
     private int _price;
     private int _miles;
     public void SetPrice(int newPrice)
@@ -21,6 +34,11 @@ namespace Dealership.Models
     public string GetMakeModel()
     {
       return _makeModel;
+    }
+
+    public void SetMakeModel(string makemodel)
+    {
+      _makeModel = makeModel;
     }
     public int GetPrice()
     {
